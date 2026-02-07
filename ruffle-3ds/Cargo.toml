@@ -4,13 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ctru-rs = { git = "https://github.com/rust3ds/ctru-rs.git" }
+ctru-rs = "0.7.1"
 
 [package.metadata.cargo-3ds]
 name = "Ruffle 3DS"
 author = "TrueMrMatic"
 description = "Flash Player for Nintendo 3DS"
-icon = { path = "icon.png" } # Optional: remove if you don't have an icon yet
+# icon = { path = "icon.png" } # TODO: Add icon later
 
 [profile.release]
 opt-level = "s"

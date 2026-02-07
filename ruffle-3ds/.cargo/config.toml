@@ -1,0 +1,5 @@
+[build]
+target = "armv6k-nintendo-3ds"
+
+[target.armv6k-nintendo-3ds]
+runner = "3dslink"

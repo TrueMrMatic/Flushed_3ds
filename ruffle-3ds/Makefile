@@ -11,11 +11,11 @@ all: $(BINARY_NAME).3dsx
 
 $(RELEASE_DIR)/$(BINARY_NAME): FORCE
 	@echo "=== Building for 3DS ==="
-	cargo +nightly build --release --target $(TARGET) -Zbuild-std
+	cargo +nightly 3ds build --release
 
 $(BINARY_NAME).3dsx: $(RELEASE_DIR)/$(BINARY_NAME)
-	@echo "=== Converting ELF to 3DSX ==="
-	3dsxtool $< $@
+	@echo "=== 3DSX created by cargo-3ds ==="
+	cp $(RELEASE_DIR)/$(BINARY_NAME).3dsx ./
 	@echo "=== Build complete: $@ ==="
 
 clean:

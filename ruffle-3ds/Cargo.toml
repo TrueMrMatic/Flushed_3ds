@@ -1,0 +1,12 @@
+[package]
+name = "ruffle-3ds"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ctru-rs = { git = "https://github.com/rust3ds/ctru-rs.git" }
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

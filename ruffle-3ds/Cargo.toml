@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ctru-rs = "0.7.1"
+ctru = "0.7.1"
 
 [package.metadata.cargo-3ds]
 name = "Ruffle 3DS"
